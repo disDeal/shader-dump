@@ -1,4 +1,7 @@
 #version 460
+#extension GL_GOOGLE_include_directive: require
+#extension GL_ARB_shading_language_420pack : require
+#extension GL_KHR_shader_subgroup_arithmetic : require
 
 // In the beginning, colours never existed. There's nothing that can be done before you...
 
