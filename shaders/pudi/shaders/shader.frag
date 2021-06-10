@@ -229,8 +229,6 @@ void mouth(in vec3 p, inout float res, uint type) {
             vec3 pb = vec3(abs(p.x), p.yz);
             pb += vec3(0., 0.23, 0.38);
 			pb = erot(pb, vec3(0.0, 0.0, 1.0), -PI / 4.);
-            /* pb.x = abs(pb.x); */
-            /* pb.xy = rot(p.xy, -PI / 4.); */
             pb = abs(pb) - vec3(0.1, 0.01, 0.0001);
             float box = length(max(pb, vec3(0.)));
             res = min(res, box);
